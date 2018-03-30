@@ -3,7 +3,7 @@ services:
   gcc:
     image: gcc:7
     volumes: 
-      - ./CwrapperDemo:/src
+      - ./CWrapperDemo:/src
       - ./BuildOutput:/src_bin
       - ./Scripts:/scripts
-    command: /bin/bash /scripts/build_cpp.sh
+    command: /bin/bash /scripts/gcc_build.sh
