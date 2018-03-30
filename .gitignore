@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/cwrapper-demo/v15/.suo
+/CWrapperDemo/bin
+/CWrapperDemo/obj
+/CWrapperDemo/CWrapperDemo.vcxproj.user
+/.vs
+/CWrapperDemo/.vs/CWrapperDemo/v15

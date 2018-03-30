@@ -1,0 +1,9 @@
+version: '3'
+services:
+  gcc:
+    image: gcc:7
+    volumes: 
+      - ./CwrapperDemo:/src
+      - ./BuildOutput:/src_bin
+      - ./Scripts:/scripts
+    command: /bin/bash /scripts/build_cpp.sh
