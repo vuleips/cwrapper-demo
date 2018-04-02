@@ -1,15 +1,15 @@
-#include "c_wrapper.h"
+#include "ExplicitKernel.h"
 #include <vector>
 #include <fstream>
 
 using namespace std;
 
-Kernel* createKernel(KernelContext* ctx) {
+Kernel* createKernel(ExplicitContext* ctx) {
 	return new Kernel(*ctx);
 }
 
 void startValidation(Kernel* kernel) {
-	KernelContext ctx = kernel->GetContext();
+	ExplicitContext ctx = kernel->GetContext();
 
 	bool isValidSTEP(true);
 

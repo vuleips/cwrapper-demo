@@ -91,11 +91,11 @@
     <TargetExt>.so</TargetExt>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="c_wrapper.cpp" />
+    <ClCompile Include="ExplicitKernel.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="kernelContext.h" />
-    <ClInclude Include="c_wrapper.h" />
+    <ClInclude Include="ExplicitContext.h" />
+    <ClInclude Include="ExplicitKernel.h" />
     <ClInclude Include="kernel.h" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

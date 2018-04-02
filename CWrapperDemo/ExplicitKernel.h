@@ -28,7 +28,7 @@
 #endif
 
 extern "C" {
-	DLL_PUBLIC Kernel* createKernel(KernelContext* ctx);
+	DLL_PUBLIC Kernel* createKernel(ExplicitContext* ctx);
 	DLL_PUBLIC void startValidation(Kernel* kernel);
 	DLL_PUBLIC void closeKernel(Kernel* kernel);
 }

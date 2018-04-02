@@ -8,7 +8,7 @@ typedef int(* ReadDataCallback)(const char*, char*, int);
 typedef void(* CloseReadDataCallback)(const char*);
 typedef void(* LogDebugCallback)(const char*);
 
-class KernelContext {
+class ExplicitContext {
 public:
 	OpenWriteDataCallback OpenWriteData;
 	WriteDataCallback WriteData;

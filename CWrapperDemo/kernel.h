@@ -1,13 +1,13 @@
 #pragma once
 
-#include "kernelContext.h"
+#include "ExplicitContext.h"
 
 class Kernel {
 public:
-	Kernel(KernelContext ctx): ctx(ctx) {}
+	Kernel(ExplicitContext ctx): ctx(ctx) {}
 	~Kernel() { /*Do nothing, since ctx is created outside of cpp*/ }
 
-	KernelContext GetContext() { return ctx; }
+	ExplicitContext GetContext() { return ctx; }
 private:
-	KernelContext ctx;
+	ExplicitContext ctx;
 };
